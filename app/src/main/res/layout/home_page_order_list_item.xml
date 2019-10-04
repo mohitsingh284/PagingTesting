@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_35sdp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/orderDate_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="23-09-19"
+        android:textSize="12sp"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintBottom_toBottomOf="@+id/parent"
+        app:layout_constraintStart_toStartOf="@+id/parent"
+        app:layout_constraintTop_toTopOf="@+id/parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".167" />
+
+    <TextView
+        android:id="@+id/totalOrder_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="100"
+        android:textSize="12sp"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintBottom_toBottomOf="@+id/parent"
+        app:layout_constraintStart_toEndOf="@id/orderDate_tv"
+        app:layout_constraintTop_toTopOf="@+id/parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".167" />
+
+    <TextView
+        android:id="@+id/totalDispatchedOrder_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="100"
+        android:textSize="12sp"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintBottom_toBottomOf="@+id/parent"
+        app:layout_constraintStart_toEndOf="@id/totalOrder_tv"
+        app:layout_constraintTop_toTopOf="@+id/parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".167" />
+
+    <TextView
+        android:id="@+id/totalPendingOrder_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="100"
+        android:textSize="12sp"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintBottom_toBottomOf="@+id/parent"
+        app:layout_constraintStart_toEndOf="@id/totalDispatchedOrder_tv"
+        app:layout_constraintTop_toTopOf="@+id/parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".167" />
+
+    <TextView
+        android:id="@+id/totalGmv_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="₹100"
+        android:textSize="12sp"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintBottom_toBottomOf="@+id/parent"
+        app:layout_constraintStart_toEndOf="@id/totalPendingOrder_tv"
+        app:layout_constraintTop_toTopOf="@+id/parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".167" />
+
+    <TextView
+        android:id="@+id/totalDeliveredOrder_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="100"
+        android:textSize="12sp"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintBottom_toBottomOf="@+id/parent"
+        app:layout_constraintStart_toEndOf="@id/totalGmv_tv"
+        app:layout_constraintTop_toTopOf="@+id/parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".167" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
